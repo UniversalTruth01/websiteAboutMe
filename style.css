@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: rgb(60, 57, 57);
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #f5ebd9;
+    color: black;
+}
+
+.header{
+    padding: 80px;
+    text-align: center;
+    background: #367892; 
+    color: black;
+}
+
+.header h1{
+    font-size: 40px;
+}
+
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background-color: rgb(232, 193, 193); /* ADDITIONAL */
+}
+
+.row li{ /* Additional */
+    font-size: 15px;
+    color: black;
+}
+
+.side{
+    -ms-flex: auto; /* 30% */
+    flex: auto; /* 30% */
+    background-color: #8ab4c4;
+    padding: 20px;
+    text-align: center; /* Not here before */
+    color: black;
+}
+
+img{
+    width: 200px;
+    height: 150px;
+}
+
+.main{
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: #f5ebd9;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two colomns stack
+on top of each other instead of next to each other. */
+
+@media screen and (max-width: 700px){
+    .row{
+        flex-direction: colomn;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the two navigation links
+stack on top of each other instead of next to each other. */
+
+@media screen and (max-width: 400px){
+    .navbar a{
+        float: none;
+        width: 100%;
+    }
+}
