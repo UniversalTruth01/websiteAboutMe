@@ -174,10 +174,14 @@ section{
     height: 1.5rem;
 }
 
-.footer{
-    padding-bottom: 20px;
-    text-align: center;
+.footer {
+    position:fixed;
+    bottom:0px;
+    height:100px;
+    width:100%;
     background: #f5ebd9;
+    text-align: center;
+    padding:30px;
 }
 
 @media screen and (max-width: 400px){

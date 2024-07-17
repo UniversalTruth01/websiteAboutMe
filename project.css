@@ -14,7 +14,7 @@
     padding: 80px;
     text-align: center;
     background: #367892;
-    color: white;
+    color: black;
   }
   
   /* Increase the font size of the heading */
@@ -32,7 +32,7 @@
   .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -41,7 +41,7 @@
    
   /* Change color on hover */
   .navbar a:hover {
-    background-color: #ddd;
+    background-color: #f5ebd9;
     color: black;
   }
   
@@ -295,7 +295,7 @@ section {
   .footer {
     padding: 20px;
     text-align: center;
-    background: #D4AE37;
+    background: #f5ebd9;
   }
 
 
